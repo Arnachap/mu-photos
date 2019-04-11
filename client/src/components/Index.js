@@ -36,7 +36,7 @@ const Index = () => {
                             <div className="portfolio-link">
                                 <img className="img-fluid" src="/img/home/mariage.jpg" alt="" />
 
-                                <a href="#"></a>
+                                <a href=""></a>
 
                                 <div className="caption">
                                     <h3>Le Mariage</h3>
@@ -48,7 +48,7 @@ const Index = () => {
                             <div className="portfolio-link">
                                 <img className="img-fluid" src="/img/home/premiers-jours.jpg" alt="" />
 
-                                <a href="#"></a>
+                                <a href=""></a>
 
                                 <div className="caption">
                                     <h3>Les Premiers Jours</h3>
@@ -60,7 +60,7 @@ const Index = () => {
                             <div className="portfolio-link">
                                 <img className="img-fluid" src="/img/home/portrait.jpg" alt="" />
 
-                                <a href="#"></a>
+                                <a href=""></a>
 
                                 <div className="caption">
                                     <h3>Portraits</h3>
@@ -72,7 +72,7 @@ const Index = () => {
                             <div className="portfolio-link">
                                 <img className="img-fluid" src="/img/home/famille.jpg" alt="" />
 
-                                <a href="#"></a>
+                                <a href=""></a>
 
                                 <div className="caption">
                                     <h3>En Famille</h3>
@@ -84,7 +84,7 @@ const Index = () => {
                             <div className="portfolio-link">
                                 <img className="img-fluid" src="/img/home/boudoir.jpg" alt="" />
 
-                                <a href="#"></a>
+                                <a href=""></a>
 
                                 <div className="caption">
                                     <h3>Boudoir</h3>
