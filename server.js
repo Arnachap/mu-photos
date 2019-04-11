@@ -7,7 +7,8 @@ users = require('./routes/api/users');
 const app = express();
 
 // Bodyparser middleware
-// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // DB config
 const db = require('./config/keys').mongoURI;
