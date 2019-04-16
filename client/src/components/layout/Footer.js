@@ -19,15 +19,15 @@ export class Footer extends Component {
                             </div>
 
                             <div className="col-4 social">
-                                <a href="https://www.facebook.com/MuphotosNancy/" target="_blank">
+                                <a href="https://www.facebook.com/MuphotosNancy/" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-facebook-square"></i>
                                 </a>
 
-                                <a href="https://www.instagram.com/muphotosnancy/" target="_blank">
+                                <a href="https://www.instagram.com/muphotosnancy/" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-instagram"></i>
                                 </a>
 
-                                <a href="https://www.mariages.net/photo-mariage/mu-photos--e144717" target="_blank">
+                                <a href="https://www.mariages.net/photo-mariage/mu-photos--e144717" target="_blank" rel="noopener noreferrer">
                                     <img className="img-fluid" src="./img/logo/mariagenet.png" alt="" />
                                 </a>
                             </div>

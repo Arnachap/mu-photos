@@ -24,7 +24,7 @@ export class Amoureux extends Component {
                                 <div className="album-link">
                                     <img className="img-fluid" src="./img/gallery/baptiste-morgane.jpg" alt="" />
 
-                                    <a href="./album.html"></a>
+                                    <a href="./album.html">Album</a>
 
                                     <div className="caption">
                                         <h3>Morgane & Baptiste</h3>
@@ -36,7 +36,7 @@ export class Amoureux extends Component {
                                 <div className="album-link">
                                     <img className="img-fluid" src="./img/gallery/charlotte-jhonas.jpg" alt="" />
 
-                                    <a href="./album.html"></a>
+                                    <a href="./album.html">Album</a>
 
                                     <div className="caption">
                                         <h3>Charlotte & Jhonas</h3>
@@ -48,7 +48,7 @@ export class Amoureux extends Component {
                                 <div className="album-link">
                                     <img className="img-fluid" src="./img/gallery/celine-bruno.jpg" alt="" />
 
-                                    <a href="./album.html"></a>
+                                    <a href="./album.html">Album</a>
 
                                     <div className="caption">
                                         <h3>Céline & Bruno</h3>
@@ -60,7 +60,7 @@ export class Amoureux extends Component {
                                 <div className="album-link">
                                     <img className="img-fluid" src="./img/gallery/amelie-arnaud.jpg" alt="" />
 
-                                    <a href="./album.html"></a>
+                                    <a href="./album.html">Album</a>
 
                                     <div className="caption">
                                         <h3>Amélie & Arnaud</h3>
@@ -72,7 +72,7 @@ export class Amoureux extends Component {
                                 <div className="album-link">
                                     <img className="img-fluid" src="./img/gallery/audrey-cedrik.jpg" alt="" />
 
-                                    <a href="./album.html"></a>
+                                    <a href="./album.html">Album</a>
 
                                     <div className="caption">
                                         <h3>Audrey & Cédrik</h3>
@@ -84,7 +84,7 @@ export class Amoureux extends Component {
                                 <div className="album-link">
                                     <img className="img-fluid" src="./img/gallery/ramona-michael.jpg" alt="" />
 
-                                    <a href="./album.html"></a>
+                                    <a href="./album.html">Album</a>
 
                                     <div className="caption">
                                         <h3>Ramona & Michael</h3>
