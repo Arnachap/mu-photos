@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 
+admins = require('./routes/api/admins');
 users = require('./routes/api/users');
 publicGalleries = require('./routes/api/publicGalleries');
 
@@ -28,6 +29,7 @@ app.use(passport.initialize());
 require('./config/passport')(passport);
 
 // Use Route
+app.use('/api/admins', admins);
 app.use('/api/users', users);
 app.use('/api/publicGalleries', publicGalleries);
 
