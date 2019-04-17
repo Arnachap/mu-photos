@@ -2,42 +2,15 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class AppNavbar extends Component {
-    constructor(props) {
-        super();
-        if (window.location.pathname === '/') {
-            this.state = { scrolled: false, imgWhite: true };
-        } else {
-            this.state = { scrolled: true, imgWhite: false };
-        }
-    }
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
-
-    handleScroll = () => {
-        if (window.location.pathname === '/') {
-            if (window.scrollY > 100 && this.state.scrolled === false) {
-                this.setState({ scrolled: true, imgWhite: false });
-            } else if (window.scrollY < 100 && this.state.scrolled === true) {
-                this.setState({ scrolled: false, imgWhite: true });
-            }
-        } else {
-            this.setState({ scrolled: true, imgWhite: false });
-        }
-    };
-
     render() {
+        console.log(this.props.shrink);
         return (
             <div>
-                <nav className={`navbar navbar-expand-lg fixed-top ${this.state.scrolled ? 'navbar-shrink' : ''}`} id="mainNav">
+                <nav className={`navbar navbar-expand-lg fixed-top ${this.props.shrink ? 'navbar-shrink' : ''}`} id="mainNav">
                     <div className="container">
                         <Link className="navbar-brand" to="/">
-                            <img id="logo-img" src={`/img/logo/logo-img${this.state.imgWhite ? '-white' : ''}.png`} alt="" />
-                            <img id="logo-name" src={`/img/logo/logo-name${this.state.imgWhite ? '-white' : ''}.png`} alt="" />
+                            <img id="logo-img" src={`/img/logo/logo-img${!this.props.shrink ? '-white' : ''}.png`} alt="" />
+                            <img id="logo-name" src={`/img/logo/logo-name${!this.props.shrink ? '-white' : ''}.png`} alt="" />
                         </Link>
 
                         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"

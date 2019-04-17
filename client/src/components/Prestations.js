@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 
+import Navbar from './layout/Navbar';
+
 export class Prestations extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = { shrink: true };
+    }
+
     render() {
         return (
             <div>
+                <Navbar shrink={this.state.shrink} />
                 <section>
                     <div class="container-fluid">
                         <h2 class="section-title">Ce que je vous propose...</h2>

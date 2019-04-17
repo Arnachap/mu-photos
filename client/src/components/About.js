@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 
+import Navbar from './layout/Navbar';
+
 export class About extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = { shrink: true };
+    }
+
     render() {
         return (
             <div>
+                <Navbar shrink={this.state.shrink} />
                 <section id="about">
                     <div className="container">
                         <div className="row">

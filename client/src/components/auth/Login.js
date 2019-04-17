@@ -4,13 +4,16 @@ import { connect } from 'react-redux';
 import classnames from 'classnames';
 import { loginUser } from '../../actions/authActions';
 
+import Navbar from '../layout/Navbar';
+
 export class Login extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             email: '',
             password: '',
-            errors: {}
+            errors: {},
+            shrink: true
         };
     }
     componentWillReceiveProps(nextProps) {
@@ -43,6 +46,7 @@ export class Login extends Component {
 
         return (
             <div>
+                <Navbar shrink={this.state.shrink} />
                 <section id="login">
                     <div className="container">
                         <div className="row">

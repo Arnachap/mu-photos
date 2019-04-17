@@ -1,9 +1,28 @@
 import React, { Component } from 'react';
 
+import Navbar from './layout/Navbar';
+
 export class Index extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = { shrink: false };
+
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = () => {
+        if (window.scrollY > 100) {
+            this.setState({ shrink: true });
+        } else {
+            this.setState({ shrink: false })
+        }
+    }
+
     render() {
         return (
             <div>
+                <Navbar shrink={this.state.shrink} />
                 <header>
                     <div id="headerSlider" className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">

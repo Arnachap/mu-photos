@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 
+import Navbar from './layout/Navbar';
+
 export class Amoureux extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = { shrink: true };
+    }
+
     render() {
         return (
             <div>
+                <Navbar shrink={this.state.shrink} />
                 <section>
                     <div className="container">
                         <div className="row">
