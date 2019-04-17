@@ -1,13 +1,15 @@
+// Utilities
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 import setAuthToken from './utils/setAuthToken';
 import { setCurrentUser } from './actions/authActions';
 
+// Redux
 import { Provider } from 'react-redux';
 import store from './store';
 
-import Navbar from './components/layout/Navbar';
+// Components
 import Footer from './components/layout/Footer';
 import Index from './components/Index';
 import Amoureux from './components/Amoureux';
@@ -16,7 +18,12 @@ import Prestations from './components/Prestations';
 import Contact from './components/Contact';
 import Login from './components/auth/Login';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// Bootstrap, jQuery, Popper.js
+import 'jquery';
+import 'popper.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
+// Custom CSS
 import './App.scss';
 
 // Check for token
