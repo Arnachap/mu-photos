@@ -18,7 +18,7 @@ export class Login extends Component {
     }
     componentWillReceiveProps(nextProps) {
         if (nextProps.auth.isAuthenticated) {
-            this.props.history.push('/');
+            nextProps.props.history.push('/contact');
         }
 
         if (nextProps.errors) {
@@ -31,7 +31,7 @@ export class Login extends Component {
 
         const userData = {
             email: this.state.email,
-            password: this.state.password
+            password: this.state.password,
         };
 
         this.props.loginUser(userData);

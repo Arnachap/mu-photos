@@ -43,7 +43,6 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            {/*<Navbar shrink={this.state.shrink} />*/}
             <Route exact path="/" component={Index} />
             <Route exact path="/en-amoureux" component={Amoureux} />
             <Route exact path="/a-propos" component={About} />

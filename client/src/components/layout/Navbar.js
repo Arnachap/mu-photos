@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
-class AppNavbar extends Component {
+class Navbar extends Component {
     render() {
-        console.log(this.props.shrink);
+        const { isAuthenticated, user } = this.props.auth;
+        isAuthenticated ? console.log('Authenticated') : console.log('nope')
+        user.admin ? console.log('ADMIN !!!') : console.log('nope')
+
         return (
             <div>
                 <nav className={`navbar navbar-expand-lg fixed-top ${this.props.shrink ? 'navbar-shrink' : ''}`} id="mainNav">
@@ -70,4 +75,12 @@ class AppNavbar extends Component {
     }
 }
 
-export default AppNavbar;
+Navbar.propTypes = {
+    auth: PropTypes.object.isRequired
+}
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+})
+
+export default connect(mapStateToProps)(Navbar);
