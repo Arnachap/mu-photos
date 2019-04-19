@@ -14,12 +14,12 @@ export class Prestations extends Component {
             <div>
                 <Navbar shrink={this.state.shrink} />
                 <section>
-                    <div class="container-fluid">
-                        <h2 class="section-title">Ce que je vous propose...</h2>
+                    <div className="container-fluid">
+                        <h2 className="section-title">Ce que je vous propose...</h2>
 
-                        <div class="row">
-                            <div class="col">
-                                <div class="prestation">
+                        <div className="row">
+                            <div className="col">
+                                <div className="prestation">
                                     <img src="./img/prestations/1.jpg" alt="" />
 
                                     <h3>Bout de chou</h3>
@@ -32,8 +32,8 @@ export class Prestations extends Component {
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <div class="prestation">
+                            <div className="col">
+                                <div className="prestation">
                                     <img src="./img/prestations/2.jpg" alt="" />
 
                                     <h3>Signature</h3>
@@ -47,8 +47,8 @@ export class Prestations extends Component {
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <div class="prestation">
+                            <div className="col">
+                                <div className="prestation">
                                     <img src="./img/prestations/3.jpg" alt="" />
 
                                     <h3>Boudoir</h3>
@@ -61,8 +61,8 @@ export class Prestations extends Component {
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <div class="prestation">
+                            <div className="col">
+                                <div className="prestation">
                                     <img src="./img/prestations/4.jpg" alt="" />
 
                                     <h3>Grossesse</h3>
@@ -73,8 +73,8 @@ export class Prestations extends Component {
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <div class="prestation">
+                            <div className="col">
+                                <div className="prestation">
                                     <img src="./img/prestations/5.jpg" alt="" />
 
                                     <h3>Famille</h3>
@@ -87,27 +87,27 @@ export class Prestations extends Component {
                             </div>
                         </div>
 
-                        <div class="row mt-3">
-                            <div class="col prestation">
-                                <p class="price">150 €</p>
+                        <div className="row mt-3">
+                            <div className="col prestation">
+                                <p className="price">150 €</p>
                             </div>
 
-                            <div class="col prestation">
-                                <p class="price">
+                            <div className="col prestation">
+                                <p className="price">
                                     <a href="./pdf/tarifs-mariage-2019.pdf" target="_blank">Découvrez<br />nos formules</a>
                                 </p>
                             </div>
 
-                            <div class="col prestation">
-                                <p class="price">120 €</p>
+                            <div className="col prestation">
+                                <p className="price">120 €</p>
                             </div>
 
-                            <div class="col prestation">
-                                <p class="price">100 €</p>
+                            <div className="col prestation">
+                                <p className="price">100 €</p>
                             </div>
 
-                            <div class="col prestation">
-                                <p class="price">100 €</p>
+                            <div className="col prestation">
+                                <p className="price">100 €</p>
                             </div>
                         </div>
                     </div>

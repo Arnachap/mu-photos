@@ -17,6 +17,7 @@ import About from './components/About';
 import Prestations from './components/Prestations';
 import Contact from './components/Contact';
 import Login from './components/auth/Login';
+import Dashboard from './components/dashboard/Dashboard';
 
 // Bootstrap, jQuery, Popper.js
 import 'jquery';
@@ -49,6 +50,7 @@ class App extends Component {
             <Route exact path="/prestations" component={Prestations} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/connexion" component={Login} />
+            <Route exact path="/compte" component={Dashboard} />
             <Footer />
           </div>
         </Router>

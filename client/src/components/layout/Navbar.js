@@ -8,10 +8,11 @@ class Navbar extends Component {
     onLogoutClick(e) {
         e.preventDefault();
         this.props.logoutUser();
+        window.location.reload();
     }
 
     render() {
-        const { isAuthenticated, user } = this.props.auth;
+        const { isAuthenticated } = this.props.auth;
 
         const userLinks = (
             <div>

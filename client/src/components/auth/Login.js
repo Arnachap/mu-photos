@@ -9,6 +9,7 @@ import Navbar from '../layout/Navbar';
 export class Login extends Component {
     constructor(props) {
         super(props);
+
         this.state = {
             email: '',
             password: '',
@@ -16,6 +17,13 @@ export class Login extends Component {
             shrink: true
         };
     }
+
+    componentDidMount() {
+        if (this.props.auth.isAuthenticated) {
+            this.props.history.push('/compte');
+        }
+    }
+
     componentWillReceiveProps(nextProps) {
         if (nextProps.auth.isAuthenticated) {
             this.props.history.push('/compte');
