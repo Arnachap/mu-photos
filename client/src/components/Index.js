@@ -24,7 +24,7 @@ export class Index extends Component {
             <div>
                 <Navbar shrink={this.state.shrink} />
                 <header>
-                    <div id="headerSlider" className="carousel slide" data-ride="carousel">
+                    <div id="headerSlider" className="carousel slide carousel-fade" data-interval="3000" data-pause="false" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#headerSlider" data-slide-to="0" className="active"></li>
                             <li data-target="#headerSlider" data-slide-to="1"></li>

@@ -2,12 +2,34 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { logoutUser } from '../../actions/authActions';
 
 class Navbar extends Component {
+    onLogoutClick(e) {
+        e.preventDefault();
+        this.props.logoutUser();
+    }
+
     render() {
         const { isAuthenticated, user } = this.props.auth;
-        isAuthenticated ? console.log('Authenticated') : console.log('nope')
-        user.admin ? console.log('ADMIN !!!') : console.log('nope')
+
+        const userLinks = (
+            <div>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/compte">Clients</Link>
+                </li>
+
+                <li className="nav-item">
+                    <a href="#" onClick={this.onLogoutClick.bind(this)} className="nav-link">Deconnexion</a>
+                </li>
+            </div>
+        );
+
+        const guestLinks = (
+            <li className="nav-item">
+                <Link className="nav-link" to="/connexion">Clients</Link>
+            </li>
+        );
 
         return (
             <div>
@@ -61,10 +83,8 @@ class Navbar extends Component {
                                     </div>
                                 </li>
 
+                                {isAuthenticated ? userLinks : guestLinks}
 
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/connexion">Clients</Link>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -76,6 +96,7 @@ class Navbar extends Component {
 }
 
 Navbar.propTypes = {
+    logoutUser: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired
 }
 
@@ -83,4 +104,4 @@ const mapStateToProps = (state) => ({
     auth: state.auth
 })
 
-export default connect(mapStateToProps)(Navbar);
+export default connect(mapStateToProps, { logoutUser })(Navbar);
