@@ -15,20 +15,8 @@ class Navbar extends Component {
         const { isAuthenticated } = this.props.auth;
 
         const userLinks = (
-            <div>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/compte">Clients</Link>
-                </li>
-
-                <li className="nav-item">
-                    <a href="#" onClick={this.onLogoutClick.bind(this)} className="nav-link">Deconnexion</a>
-                </li>
-            </div>
-        );
-
-        const guestLinks = (
             <li className="nav-item">
-                <Link className="nav-link" to="/connexion">Clients</Link>
+                <a href="#" onClick={this.onLogoutClick.bind(this)} className="nav-link"><i class="fas fa-sign-out-alt"></i></a>
             </li>
         );
 
@@ -84,7 +72,12 @@ class Navbar extends Component {
                                     </div>
                                 </li>
 
-                                {isAuthenticated ? userLinks : guestLinks}
+
+                                <li className="nav-item">
+                                    <Link className="nav-link" to={isAuthenticated ? '/compte' : '/connexion'}>Clients</Link>
+                                </li>
+
+                                {isAuthenticated ? userLinks : ''}
 
                             </ul>
                         </div>
