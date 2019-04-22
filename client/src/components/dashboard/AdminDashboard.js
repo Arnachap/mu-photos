@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Clients from '../admin/Clients';
-import PublicGalleries from '../admin/PublicGalleries';
+import PublicGalleries from '../admin/publicGalleries/PublicGalleries';
 
 class AdminDashboard extends Component {
     constructor() {

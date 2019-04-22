@@ -1,19 +1,24 @@
-import { ADD_GALLERY } from '../actions/types';
+import { ADD_PUBLIC_GALLERY, GET_PUBLIC_GALLERIES } from '../actions/types';
 
 const initialState = {
-    galleries: [],
-    gallery: {}
+    publicGalleries: [],
+    publicGallery: {}
 }
 
 export default function (state = initialState, action) {
     switch (action.type) {
-        case ADD_GALLERY:
+        case GET_PUBLIC_GALLERIES:
             return {
                 ...state,
-                galleries: [action.payload, ...state.galleries]
+                publicGalleries: action.payload
             }
-
-        default:
-            return state;
-    }
+        case ADD_PUBLIC_GALLERY:
+            return {
+                ...state,
+                publicGalleries: [action.payload, ...state.publicGalleries]
+            }; 
+                    default:
+                    return state;
+                }
+            
 }
