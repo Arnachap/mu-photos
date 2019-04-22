@@ -1,3 +1,7 @@
 export const GET_ERRORS = 'GET_ERRORS';
 export const CLEAR_ERRORS = 'CLEAR_ERRORS';
 export const SET_CURRENT_USER = 'SET_CURRENT_USER';
+export const GALLERY_LOADING = 'GALLERY_LOADING';
+export const GET_GALLERY = 'GET_GALLERY';
+export const GET_GALLERIES = 'GET_GALLERIES';
+export const ADD_GALLERY = 'ADD_GALLERY';

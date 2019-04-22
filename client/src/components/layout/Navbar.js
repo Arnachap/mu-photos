@@ -16,7 +16,7 @@ class Navbar extends Component {
 
         const userLinks = (
             <li className="nav-item">
-                <a href="#" onClick={this.onLogoutClick.bind(this)} className="nav-link"><i class="fas fa-sign-out-alt"></i></a>
+                <a href="#" onClick={this.onLogoutClick.bind(this)} className="nav-link"><i className="fas fa-sign-out-alt"></i></a>
             </li>
         );
 

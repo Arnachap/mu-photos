@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Clients from '../admin/Clients';
+import PublicGalleries from '../admin/PublicGalleries';
 
 class AdminDashboard extends Component {
     constructor() {
@@ -40,6 +41,7 @@ class AdminDashboard extends Component {
                     </div>
 
                     {this.state.clients ? <Clients /> : ""}
+                    {this.state.publicGalleries ? <PublicGalleries /> : ""}
                 </section>
             </div>
         )
